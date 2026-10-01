@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+
 int main() {
     double x1, x2, y1, y2, sqrx, sqry;
     int logic;
@@ -20,4 +21,5 @@ int main() {
     else {
     std::cout << "не то число";
     }
+    return 0;
 }

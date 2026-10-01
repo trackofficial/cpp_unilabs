@@ -2,7 +2,7 @@
 #include <cmath>
 
 int main() {
-    double x1, x2, y1, y2, x3, y3, x4, y4;
+    double x1, x2, y1, y2;
     int logic;
 
     std::cout << "Введите координаты 1 точки"; // x1 y1 
@@ -14,7 +14,7 @@ int main() {
     if (logic == 0) {
         double dx = x2 - x1;
         double dy = y2 - y1;
-        // против часовой т.к мы не знаем как идет A и B
+        // против часовой т.к мы не знаем как идет A и B, C, D
         double x3_1 = x2 - dy;
         double y3_1 = y2 + dx;
         double x4_1 = x1 - dy;
@@ -45,4 +45,5 @@ int main() {
     else {
         std::cout << "выбрали не то число";
     }
+    return 0;
 }

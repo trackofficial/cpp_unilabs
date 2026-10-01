@@ -9,4 +9,5 @@ int main(){
     std::cout << "Введите длину внутр.: ";
     std::cin >> L2;
     std::cout << (L1*L1 - L2*L2)/(4*PI);
+    return 0;
 }

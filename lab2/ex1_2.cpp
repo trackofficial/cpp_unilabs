@@ -11,4 +11,5 @@ int main() {
     std::cout << "Введите кол-во: ";
     std::cin >> N;
     std::cout << a/(2*sin(PI/N));//R=a/(2*sin(180/N))
+    return 0;
 }     

@@ -14,4 +14,5 @@ int main() {
     num4 = num3*num3; // a^8
     numval = num4*num2; //a^8*a^a^2    
     std::cout << numval;
+    return 0;
 }

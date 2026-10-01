@@ -16,4 +16,5 @@ int main() {
     num5 = num4*num4;//^16
     numval = num5/num1;//a^16/a^1
     std::cout << numval;
+    return 0;
 }
