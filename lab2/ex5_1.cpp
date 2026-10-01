@@ -8,7 +8,7 @@ int main() {
     int num5;
     int num6;
     int numval;
-    
+
     std::cout << "Введите: ";
     std::cin >> num1;
     num2 = num1*num1;//^2
@@ -18,4 +18,5 @@ int main() {
     num6 = num5*num5;//^24
     numval = num6/num3;//^a^24/a^3
     std::cout << numval;
+    return 0;
 }
