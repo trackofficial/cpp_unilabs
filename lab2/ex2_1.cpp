@@ -1,11 +1,11 @@
 #include <iostream>
 
 int main() {
-    int num1;
-    int num2;
-    int num3;
-    int num4;
-    int numval;
+    long long num1;
+    long long num2;
+    long long num3;
+    long long num4;
+    long long numval;
     
     std::cout << "Введите: ";
     std::cin >> num1;
