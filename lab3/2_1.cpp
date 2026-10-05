@@ -13,7 +13,7 @@ int main() {
     double chisl1 = min(x,5);
     double chisl2 = max(y,10);
     double znam1 = min(x,10);
-    double znam2 = max(y,pow(x, 1.0 / 7.0));//pow это возведение в 1.7 степеньФ2345ЪЧЯ
+    double znam2 = max(y,pow(x, 1.0 / 7.0));//pow это возведение в 1/7 степень
     double chislfull = max(chisl1,chisl2);
     double znamfull = max(znam1,znam2);
     z = chislfull/znamfull;
