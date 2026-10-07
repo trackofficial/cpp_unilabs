@@ -17,7 +17,7 @@ int main() {
 
     if (onCircle) {
         std::cout << "Точка на ок-ти." << std::endl;
-    } 
+    }
     else if (onParabola) {
         std::cout << "Точка на параболе." << std::endl;
     } 
