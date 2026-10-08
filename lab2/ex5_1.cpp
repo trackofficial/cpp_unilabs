@@ -11,6 +11,10 @@ int main() {
 
     std::cout << "Введите: ";
     std::cin >> num1;
+        if (num1<=0){
+        std::cout << "не N число";
+        return 1;
+    }
     num2 = num1*num1;//^2
     num3 = num2*num1;//^3
     num4 = num3*num3;//^6
