@@ -8,7 +8,7 @@ int main() {
     long long num5;
     long long num6;
     long long numval;
-
+    
     std::cout << "Введите: ";
     std::cin >> num1;
         if (num1<=0){

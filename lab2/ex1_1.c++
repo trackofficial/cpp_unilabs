@@ -11,6 +11,7 @@ int main() {
         std::cout << "не N число";
         return 1;
     }
+    
     num2 = num1*num1; //a^2
     num3 = num2*num2; //a^4
     numval = num3*num3; //a^8
