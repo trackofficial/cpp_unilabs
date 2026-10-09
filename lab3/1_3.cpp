@@ -10,16 +10,32 @@ int main() {
     double f3 = y - (x - 1);
 
  if (f1 == 0) {
-        std::cout << "Точка на ок-ти.";
+        std::cout << "Точка на ок-ти. ";
     } 
-    else if (f2 == 0) {
-        std::cout << "Точка на параболе.";
-    } 
-    else if (f3 == 0) {
-        std::cout << "Точка на прямой.";
-    } 
-    else {
-        std::cout << "Точка не лежит ни на одной линии";
+    else if(f1 < 0){
+        std::cout << "Внутри ок-ти ";
     }
+    else if(f1 > 0){
+        std::cout << "за ок-тью ";
+    }
+    else if (f2 == 0) {
+        std::cout << "Точка на параболе. ";
+    } 
+        else if(f2 > 0){
+        std::cout << "Внутри параболы ";
+    }
+    else if(f2 < 0){
+        std::cout << "за параболой ";
+    }
+    else if (f3 == 0) {
+        std::cout << "Точка на прямой. ";
+    } 
+        else if(f3 < 0){
+        std::cout << "под прямой ";
+    }
+    else if(f3 > 0){
+        std::cout << "над прямой ";
+    }
+    
     return 0;
 }
