@@ -13,28 +13,28 @@ int main() {
         std::cout << "Точка на ок-ти. ";
     } 
     else if(f1 < 0){
-        std::cout << "Внутри ок-ти ";
+        std::cout << "Внутри ок-ти. ";
     }
     else if(f1 > 0){
-        std::cout << "за ок-тью ";
+        std::cout << "за ок-тью. ";
     }
-    else if (f2 == 0) {
+    if (f2 == 0) {
         std::cout << "Точка на параболе. ";
     } 
         else if(f2 > 0){
-        std::cout << "Внутри параболы ";
+        std::cout << "Внутри параболы. ";
     }
     else if(f2 < 0){
-        std::cout << "за параболой ";
+        std::cout << "за параболой. ";
     }
-    else if (f3 == 0) {
+    if (f3 == 0) {
         std::cout << "Точка на прямой. ";
     } 
         else if(f3 < 0){
-        std::cout << "под прямой ";
+        std::cout << "под прямой. ";
     }
     else if(f3 > 0){
-        std::cout << "над прямой ";
+        std::cout << "над прямой. ";
     }
     
     return 0;
