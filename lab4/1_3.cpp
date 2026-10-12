@@ -14,7 +14,7 @@ int main() {
     }
     for (long long d = 3; d * d <= n; d += 2) {
         while (n % d == 0) {
-            std::cout << d << " ";
+            std::cout << d << ", ";
             n /= d;
         }
     }

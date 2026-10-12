@@ -8,16 +8,17 @@ int main() {
     double f1 = pow(x + 1, 2) + pow(y - 5, 2) - 16;
     double f2 = y - pow(3*x + 7, 2);
     double f3 = y - (x - 1);
-
+std::cout << "Точка ";
  if (f1 == 0) {
-        std::cout << "Точка на ок-ти. ";
+        std::cout << "На ок-ти. ";
     } 
     else if(f1 < 0){
         std::cout << "Внутри ок-ти. ";
     }
     else if(f1 > 0){
-        std::cout << "за ок-тью. ";
+        std::cout << "За ок-тью. ";
     }
+
     if (f2 == 0) {
         std::cout << "Точка на параболе. ";
     } 
@@ -25,16 +26,17 @@ int main() {
         std::cout << "Внутри параболы. ";
     }
     else if(f2 < 0){
-        std::cout << "за параболой. ";
+        std::cout << "За параболой. ";
     }
+
     if (f3 == 0) {
         std::cout << "Точка на прямой. ";
     } 
         else if(f3 < 0){
-        std::cout << "под прямой. ";
+        std::cout << "Под прямой. ";
     }
     else if(f3 > 0){
-        std::cout << "над прямой. ";
+        std::cout << "Над прямой. ";
     }
     
     return 0;
