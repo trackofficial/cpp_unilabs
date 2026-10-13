@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cmath>
-
 int main() {
     double x, y;
     std::cout << "x и y: ";
