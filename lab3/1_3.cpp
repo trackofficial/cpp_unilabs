@@ -7,8 +7,9 @@ int main() {
     double f1 = pow(x + 1, 2) + pow(y - 5, 2) - 16;
     double f2 = y - pow(3*x + 7, 2);
     double f3 = y - (x - 1);
-std::cout << "Точка ";
- if (f1 == 0) {
+    
+    std::cout << "Точка ";
+    if (f1 == 0) {
         std::cout << "На ок-ти. ";
     } 
     else if(f1 < 0){

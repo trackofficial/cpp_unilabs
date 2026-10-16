@@ -6,6 +6,7 @@ int main(){
     int n;
     std::cout << "Введите на промежутке [-1;1] и кол-во ";
     std::cin >> x >> n;
+    
     if (abs(x) >1){
         std::cout << "не то число";
         return 1;

@@ -7,18 +7,15 @@ int main(){
         std::cout << "Ошибка: число должно быть четырехзначным!";
         return 0;
     }
-    else {
-        std::cout << "число четырехзначное";
-    }
     int d1 = num / 1000;
-    int d2 = (num / 100) % 10;
+    int d2 = (num / 100) % 10;// 3 % 2 = 1
     int d3 = (num / 10) % 10; 
     int d4 = num % 10;
     if (d1==d2 && d2==d3 && d3==d4){
-        std::cout << " true" << '\n';
+        std::cout << "true";
     }
     else {
-        std::cout << " false" << '\n';
+        std::cout << "false";
     }
     return 0;
 }

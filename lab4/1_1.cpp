@@ -9,6 +9,7 @@ int main(){
         cout<<"Write another number";
         return 1;
     }
+
         //(1,2,3,..)
     long long sum1 =0;
     long long proi1 = 1;
@@ -16,6 +17,7 @@ int main(){
         sum1 += i;
         proi1 *= i;
     }
+
  cout << "Cумма = " << sum1 << ", Произведение = " << proi1 << endl;
         //(2,4,6,..)
     long long sum2 =0;
@@ -25,8 +27,8 @@ int main(){
         sum2 += ij;
         proi2 *= ij;
     }
- cout << "Cумма = " << sum2 << ", Произведение = " << proi2 << endl;
 
+ cout << "Cумма = " << sum2 << ", Произведение = " << proi2 << endl;
     //(1,3,5,..)
     long long sum3 =0;
     long long proi3 = 1;
@@ -35,8 +37,8 @@ int main(){
         sum3 += ij;
         proi3 *= ij;
     }
+
  cout << "Cумма = " << sum3 << ", Произведение = " << proi3 << endl;
-    
     //1/2,1/3,1/4,...
     double sum4 =0.0;
     double proi4 = 1.0;
