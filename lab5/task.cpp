@@ -2,7 +2,7 @@
 #include <cmath>
 #include <numbers>
 int main() {
-  double x_start, x_end, dx, a, b;
+  double x_start, x_end, dx, a, b;//сделать со своей функцией
 
   std::cout << "Введите x_start:";
   std::cin >> x_start;
