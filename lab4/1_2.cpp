@@ -23,7 +23,7 @@ int main(){
     int i = 0;
     while (i < n) {
         sumw += tw;
-        tw *= -x * x * (2 * i + 1) / (2 * i + 3);
+        tw *= -x * x * (2.0 * i + 1.0) / (2.0 * i + 3.0);
         i++;
     }
 
@@ -33,7 +33,7 @@ int main(){
     if (n > 0) {
         do {
             sumdo += tdo;
-            tdo *= -x * x * (2 * ido + 1) / (2 * ido + 3);
+            tdo *= -x * x * (2.0 * ido + 1.0) / (2.0 * ido + 3.0);
             ido++;
         } while (ido < n);
     }
