@@ -4,7 +4,7 @@
 int main(){
     double x;
     int n;
-    std::cout << "Введите на промежутке [-1;1] и кол-во ";
+    std::cout << "Введите [-1;1] и их кол-во ";
     std::cin >> x >> n;
     
     if (abs(x) >1){

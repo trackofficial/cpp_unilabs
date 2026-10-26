@@ -2,8 +2,8 @@
 #include <cmath>
 #include <numbers>
 int main() {
-  double x_start, x_end, dx, a, b;//сделать со своей функцией
-
+  double x_start, x_end, dx, a, b;
+  double y1, y2, y3;
   std::cout << "Введите x_start:";
   std::cin >> x_start;
   std::cout << "Введите x_end:";
@@ -14,39 +14,36 @@ int main() {
   std::cin >> a;
   std::cout << "Введите b:";
   std::cin >> b;
-
+  std::cout << "   X  |   Y1    |   Y2    |   Y3   " << std::endl;
+  std::cout << "------------------------------------" << std::endl;
   for (double x=x_start;x <= x_end;x += dx) {
-    double y1, y2, y3;
 
     // y1
     if (x <= 0) {
-      y1 = sqrt(a * a - pow(x + a, 2));
+      y1 = log(std::sin(a*x)+(std::numbers::pi/2));
     }
     else {
-      y1 = -b * sin(x);
+      y1 = log(std::numbers::pi+(b*x*x)) - log(2/(1+x));
     }
 
     // y2
-    if (x <= -1) {
-      y2 = log10(b / (x * x));
+    if (x <= 0) {
+      y2 = a*std::cos(x);
     }
-    else {
-      y2 = log10(b + sqrt(x + 1));
+    else if (x > 0){
+      y2 = a-std::pow(b,x);
     }
 
     // y3
-    if (x <= 0) {
-      y3 = abs(x * x + std::numbers::pi * x + 1);
+    if (x <= -1) {
+      y3 = std::sqrt(a*(std::abs(x+1)));
     }
-    else {
-      y3 = 1 + b * log(1 + x);
+    else if (x > -1){
+      y3 = (b / std::sqrt(2.0)) - std::sqrt((b * b) / (1.0 + x * x)); 
     }
 
-    std::cout << "x = " << x << std::endl;
-    std::cout << "y1 = " << y1 << std::endl;
-    std::cout << "y2 = " << y2 << std::endl;
-    std::cout << "y3 = " << y3 << std::endl;
-    std::cout << "_______" << std::endl;
+ 
+    std::cout << "   " << x << "  |  " << y1 << "  |  " << y2 << "  |  " << y3 << std::endl;
   }
 
   return 0;
