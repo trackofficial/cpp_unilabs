@@ -4,7 +4,7 @@
 int main(){
     double x;
     int n;
-    std::cout << "Введите [-1;1] и их кол-во ";
+    std::cout << "Введите х [-1;1] и их кол-во ";
     std::cin >> x >> n;
     
     if (abs(x) >1){
@@ -15,7 +15,7 @@ int main(){
     double tf = x;
     for (int i = 0; i < n; i++) {
         sumf += tf;
-        tf *= -x * x * (2 * i + 1) / (2 * i + 3);
+        tf *= -x * x * (2.0 * i + 1.0) / (2.0 * i + 3.0);
     }
 
     double sumw = 0.0;

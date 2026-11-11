@@ -4,7 +4,7 @@ int main() {
     long long n;
     std::cout << "Введите натуральное ";
     if (!(std::cin >> n) || n <= 0) {
-        std::cout << "не натуральное число\n";
+        std::cout << "не натуральное числе";
         return 1;
     }
     std::cout << "Простые множ-ли числа" << n << ": ";
@@ -14,7 +14,7 @@ int main() {
     }
     for (long long d = 3; d * d <= n; d += 2) {
         while (n % d == 0) {
-            std::cout << d << " ";
+            std::cout << d << ", ";
             n /= d;
         }
     }

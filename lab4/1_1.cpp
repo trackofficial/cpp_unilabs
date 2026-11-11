@@ -2,7 +2,7 @@
 #include <cmath>
 
 int main(){
-    int N;
+    long long N;
     std::cout<<"Write N: ";
     std::cin>>N;
 
@@ -11,7 +11,7 @@ int main(){
         return 1;
     }
         //(1,2,3,..)
-    long long sum1 = 0;
+    long long sum1=0;
     long long proi1 = 1;
     for (int i = 1; i <= N; ++i) {
         sum1 += i;
@@ -72,7 +72,7 @@ int main(){
     double sum7 = 0.0;
     double proi7 = 1.0; 
     for (int i = 1; i <= N; ++i) {
-        double ij = 1.0/pow(i,2);
+        double ij = 1.0/pow(i,2.0);
         sum7 += ij;
         proi7 *= ij;
     }

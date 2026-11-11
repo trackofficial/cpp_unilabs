@@ -4,9 +4,9 @@
 int main() {
   double x_start, x_end, dx, a, b;
   double y1, y2, y3;
-  std::cout << "Введите x_start:";
+  std::cout << "Введите x начала:";
   std::cin >> x_start;
-  std::cout << "Введите x_end:";
+  std::cout << "Введите x конец:";
   std::cin >> x_end;
   std::cout << "Введите dx:";
   std::cin >> dx;
