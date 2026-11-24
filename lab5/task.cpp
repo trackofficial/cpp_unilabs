@@ -2,22 +2,28 @@
 #include <cmath>
 
 int main() {
-    double x_start, x_end, dx, a, b;
-    double y1, y2, y3;
+    double x_1, x_2, dx, a, b, y1, y2, y3;
     const double PI = 3.14159265359;
     std::cout << "Введите x начала: ";
-    std::cin >> x_start;
+    std::cin >> x_1;
     std::cout << "Введите x конец: ";
-    std::cin >> x_end;
-    std::cout << "Введите dx: ";
+    std::cin >> x_2;
+    std::cout << "Введите шаг: ";
     std::cin >> dx;
-    std::cout << "Введите a: ";
+    std::cout << "Введите коэф. a: ";
     std::cin >> a;
-    std::cout << "Введите b: ";
+    std::cout << "Введите коэф. b: ";
     std::cin >> b;
-    std::cout << "     X    |    Y1    |    Y2    |    Y3    " << std::endl;
-    std::cout << "---------------------------------------------" << std::endl;
-    for (double x = x_start; x <= x_end + dx / 2.0; x += dx) {
+    std::cout << "    X    |    Y1    |    Y2    |    Y3    " << std::endl;
+    std::cout << "------------------------------------------" << std::endl;
+    if (dx <= 0) {
+        std::cout << "err: dx <= 0 / не выполнимо" << std::endl;
+        return 1;
+    }
+    if (x_1 > x_2) {
+        dx = -dx;
+    }
+    for (double x = x_1; x <= x_2; x += dx) {
         if (x <= 0) {
             y1 = std::log(std::sin(a * x) + PI / 2.0);
         } else {
@@ -33,9 +39,7 @@ int main() {
         } else {
             y3 = b / std::sqrt(2.0) - std::sqrt((b * b) / (1.0 + x * x));
         }
-
         std::cout << "   " << x << "  |  " << y1 << "  |  " << y2 << "  |  " << y3 << std::endl;
     }
-
     return 0;
 }
