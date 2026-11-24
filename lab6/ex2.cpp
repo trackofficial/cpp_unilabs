@@ -7,7 +7,7 @@ int main() {
     std::cin >> N;
     if (N <= 0) {
         std::cout << "err: размер не подходит" << std::endl;
-        return 0;
+        return 1;
     }
     double a[N];
     std::cout << "Введите действительные числа";
@@ -42,7 +42,7 @@ int main() {
         for (int i = left + 1; i < right; ++i) {
             answ *= a[i];
         }
-        std::cout << "[" << left << ";" << right << "]: " << answ << std::endl;
+        std::cout << "[" << a[left] << ";" << a[right] << "]: " << answ << std::endl;
     }
     return 0;
 }

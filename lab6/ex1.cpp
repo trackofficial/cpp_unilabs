@@ -6,7 +6,7 @@ int main() {
     std::cin >> N;
     if (N <= 0) {
         std::cout << "ошибка - размер массива не тот" << std::endl;
-        return 0;
+        return 1;
     }
     double a[N];
     std::cout << "Введите числа действ ";

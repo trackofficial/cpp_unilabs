@@ -7,7 +7,7 @@ int main() {
 
     if (N <= 0) {
         std::cout << "err: размер не подходит" << std::endl;
-        return 0;
+        return 1;
     }
     double a[N];
 
@@ -26,7 +26,6 @@ for (int i = 0; i < N; ++i) {
             a[j] = temp;
             temp = next;
         }
-
             a[i] = temp;
         ++pos;
     }
