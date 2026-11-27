@@ -2,7 +2,7 @@
 
 int main() {
     int N;
-    std::cout << "Ввод N: ";
+    std::cout << "N: ";
     std::cin >> N;
 
     if (N <= 0) {
@@ -30,8 +30,7 @@ for (int i = 0; i < N; ++i) {
         ++pos;
     }
 }
-
-    std::cout << "Преобразованный массив: ";
+    std::cout << "New массив: ";
     for (int i = 0; i < N; ++i) {
         std::cout << a[i] << " ";
     }

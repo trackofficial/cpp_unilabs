@@ -31,9 +31,9 @@ int main() {
     int left = max;
     int right = min;
     if (left > right) {
-        int temp = left;
+        int buf = left;
         left = right;
-        right = temp;
+        right = buf;
     }
     if (right - left <= 1) {
         std::cout << "нет элементов" << std::endl;

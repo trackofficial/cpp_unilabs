@@ -21,6 +21,6 @@ int main() {
             answer = a[i];
         }
     }
-    std::cout << "Значение максимального по модулю элемента: " << answer << std::endl;
+    std::cout << "Значение максимального элемента: " << answer << std::endl;
     return 0;
 }
